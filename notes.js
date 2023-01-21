@@ -34,9 +34,10 @@ let favFood = "Apple"
 
 const shmolonkey = () => {
     favFood = "Banana" // reassigned here
-    return `the ${animal}'s favorite food is ${favFood} and he has ${monkeyBalls} ball's.`
+    console.log(`the ${animal}'s favorite food is ${favFood} and he has ${monkeyBalls} ball's.`)
     //prints the Monkey's favorite food is Banana and he has 2 ball's.
 }
+shmolonkey()
 
 // However bro if we were to throw in the new reassignment after the function or even name the favFood reassignment to let favFood
 // it would hella fuck that shit up fr cuh: (ripped this shit off codecademy 💀)
@@ -47,11 +48,10 @@ const logVisibleLightWaves = () => {
       let region = 'The Arctic';
     if (region === 'The Arctic'){
       let lightWaves = 'Northern Lights'
-      console.log(lightWaves)
+      console.log(lightWaves) // prints "Northern lights"
     }
-    console.log(lightWaves);
+    console.log(lightWaves); // "MoonLight"
   };
-  
   logVisibleLightWaves();
 // notice how we reuse the same variable twice but one prints the new reassigned name of lightWaves and one prints the 
 //other that was outside of the if statement. this is ok just like use a diff variable name or some cuh
@@ -187,4 +187,8 @@ for (let i = 1; i < 5; i++){
 4
 */
 
-// for (let variable = value; variable (< / > / =))
+/*
+// for (let counter = value; couner (< / > / =); counter++/counter--) {
+  function
+}
+*/
