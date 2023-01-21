@@ -7,20 +7,20 @@
 //So basically you can use a variable outside of a function like this
 const vari1 = "awesome"
 const vari2 = () => {
-    return `${vari1} sauce`
+    console.log(`${vari1} sauce`)
 }
-
-console.log(vari2) // prints "awesome sauce"
+vari2() // prints "awesome sauce"
 
 //Block Scopes
 //(When a variable is defined inside a block, it is only accessible to the code within the curly braces {})
 // However bro u cant use a variable thats inside a function outside of said function:
-const vari3 = () => {
-    let vari4 = 5;
+const vari3 = 5;
+const vari4 = () => {
+  console.log(vari3 + 4)
+  let vari5 = vari3;
 }
-
-const vari5 = vari3 + 1; 
-console.log(vari3) // throws a ReferenceError
+vari4()
+vari5()
 
 //Scope Pollution
 // alr broe so ill just explain it dont try and use too many variables in the global namespace or whatever thats already too much work
