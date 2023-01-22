@@ -227,9 +227,9 @@ const tinasFollowers = ['Elijah', 'Diana', 'Irais'];
 const mutualFollowers = [] // this array will save the mutual followers between bob and tina
 for (let i = 0; i < bobsFollowers.length; i++) { //iterators through bobs followers and adds
   for(let j = 0; j < tinasFollowers.length; j++) { //iterates through tinas followers
-    if (bobsFollowers[i] === tinasFollowers[j]){
-      mutualFollowers.push(bobsFollowers[i])
-      console.log(mutualFollowers)
+    if (bobsFollowers[i] === tinasFollowers[j]){ //if bobs follower iterator is equal to tinas follower iterator 
+      mutualFollowers.push(bobsFollowers[i])// then push bobs follower into mutual follower array
+      console.log(mutualFollowers) // logs {Diana, Irais}
     }
   }
 }
