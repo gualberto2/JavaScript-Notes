@@ -218,7 +218,7 @@ I would love to visit Tulum
 
 // Nested For Loops
 // alr broe so this one might be a little tricky if ur dumb like me
-// so we can loop a loop inside of a loop
+// so we can loop a loop inside of a loop to save what that loop did in an array or whatever
 // it looks something like this
 const bobsFollowers = ['Diana', 'Irais', 'Bebe', 'Da bebe diana'];
 const tinasFollowers = ['Elijah', 'Diana', 'Irais'];
@@ -233,3 +233,6 @@ for (let i = 0; i < bobsFollowers.length; i++) { //iterators through bobs follow
     }
   }
 }
+
+//While Loop
+// so basically this one is a little easier
