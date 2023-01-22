@@ -272,3 +272,17 @@ do { // do this
 2 cup was added
 3 cup was added
 */
+
+
+//Break
+// so you can break out of a loop with this, if the condition or loop gets met before its specified condition
+// 
+const rapperArray = ["Lil' Kim", "Jay-Z", "Notorious B.I.G.", "Tupac"];
+
+// Write your code below
+for (let i = 0; i < rapperArray.length; i++) {
+  console.log(rapperArray[i] + " And if you don't know, now you know.");
+      if (rapperArray[i] === 'Notorious B.I.G.'){
+    break;
+  }
+}
