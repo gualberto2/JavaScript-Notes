@@ -284,3 +284,13 @@ for (let i = 0; i < rapperArray.length; i++) { // will itereate whole array unti
     break; // breaks the loop
   }
 }
+
+
+
+// Alr bro so we starting the next set of notes
+// Objects
+// so basically we can use objects to assign them to variables like this:
+let fasterShip = {
+  'Fuel Type': 'Turbo Fuel',
+  color: 'silver'
+}
