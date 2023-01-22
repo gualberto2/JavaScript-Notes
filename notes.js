@@ -224,8 +224,8 @@ const bobsFollowers = ['Diana', 'Irais', 'Bebe', 'Da bebe diana'];
 const tinasFollowers = ['Elijah', 'Diana', 'Irais'];
 // so here we have two arrays of two different peoples followers, although
 // they lowkey got some of the same followers
-const mutualFollowers = []
-for (let i = 0; i < bobsFollowers.length; i++) {
+const mutualFollowers = [] // this array will save the mutual followers between bob and tina
+for (let i = 0; i < bobsFollowers.length; i++) { //
   for(let j = 0; j < tinasFollowers.length; j++) {
     if (bobsFollowers[i] === tinasFollowers[j]){
       mutualFollowers.push(bobsFollowers[i])
