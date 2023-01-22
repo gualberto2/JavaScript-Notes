@@ -253,3 +253,17 @@ while (counterTwo < 4) {
 // and the stopping/test condition is in the variable(HERE) in there and will be accounted for during each
 // round of a loop. While it runs true it will keep looping until it runs false.
 // alr monkey term: While true keep running code, once/if false stop running while looop
+
+
+//Do... While loop statements
+// so basically this will do something until a specified condition is no longer met
+// example
+let cupsOfSugarNeeded = 3;
+let cupsAdded = 0;
+
+do { // do this
+ cupsAdded++
+ console.log(cupsAdded + ' cup was added') 
+} while (cupsAdded < cupsOfSugarNeeded); // until the condition is no longer met
+
+
