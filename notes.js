@@ -278,9 +278,9 @@ do { // do this
 // so you can break out of a loop with this, if the condition or loop gets met before its specified condition
 // this is especially useful in big data structures
 const rapperArray = ["Lil' Kim", "Jay-Z", "Notorious B.I.G.", "Tupac"];
-for (let i = 0; i < rapperArray.length; i++) {
+for (let i = 0; i < rapperArray.length; i++) { // will itereate whole array until it meets the if requirement.
   console.log(rapperArray[i] + " And if you don't know, now you know.");
-      if (rapperArray[i] === 'Notorious B.I.G.'){
-    break;
+      if (rapperArray[i] === 'Notorious B.I.G.'){ // the if requirement is the console.log()s quote author
+    break; // breaks the loop
   }
 }
