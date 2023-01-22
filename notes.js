@@ -266,4 +266,9 @@ do { // do this
  console.log(cupsAdded + ' cup was added') 
 } while (cupsAdded < cupsOfSugarNeeded); // until the condition is no longer met
 
-
+//prints:
+/*
+1 cup was added
+2 cup was added
+3 cup was added
+*/
