@@ -296,3 +296,16 @@ let fasterShip = {
 }
 // ripped this off CA (💀) We fill an object with unordered data. This data is organized into key-value pairs.
 // A key is like a variable name that points to a location in memory that holds a value.
+
+//Accessing these key value Properties:
+// Simply use a "." notation to along with the object name such as the example below:
+let spaceship = {
+  homePlanet: 'Earth',
+  color: 'silver',
+  'Fuel Type': 'Turbo Fuel',
+  numCrew: 5,
+  flightPath: ['Venus', 'Mars', 'Saturn']
+};
+const crewCount = spaceship.numCrew;
+const planetArray = spaceship.flightPath;
+const fuelType = spaceship.'Fuel Type' // this will throw a referenceError since it cannot be used as a string
