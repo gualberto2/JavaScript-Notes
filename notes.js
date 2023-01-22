@@ -183,6 +183,8 @@ console.log(arrayLoop[3])
 }
 */
 
+// broe so like make sure you you know that the ; (semicolon) is used as a seperator (think about an if then statement)
+// 
 //first there's the for loop:
 //this one counts forward given the counter is set to ++
 for (let i = 1; i < 5; i++){
@@ -202,7 +204,8 @@ for (let i = 3; i >= 0; i--){
 
 //Looping through arrays
 // alr so basically you can use the variable name of the array as the stopping condiiton (vacationSpots)
-// using .length() 
+// in this example, using .length() checks to see if the iterator is less than the length of the variables
+// total array length (length is 2 (indexed at zero)) and if it is then the iterator adds one.
 const vacationSpots = ['Bali', 'Paris', 'Tulum'];
 for (let i = 0; i < vacationSpots.length; i++ ){
   console.log('I would love to visit ' + vacationSpots[i]);
@@ -212,3 +215,21 @@ prints would love to visit Bali
 I would love to visit Paris
 I would love to visit Tulum
 */
+
+// Nested For Loops
+// alr broe so this one might be a little tricky if ur dumb like me
+// so we can loop a loop inside of a loop
+// it looks something like this
+const bobsFollowers = ['Diana', 'Irais', 'Bebe', 'Da bebe diana'];
+const tinasFollowers = ['Elijah', 'Diana', 'Irais'];
+// so here we have two arrays of two different peoples followers, although
+// they lowkey got some of the same followers
+const mutualFollowers = []
+for (let i = 0; i < bobsFollowers.length; i++) {
+  for(let j = 0; j < tinasFollowers.length; j++) {
+    if (bobsFollowers[i] === tinasFollowers[j]){
+      mutualFollowers.push(bobsFollowers[i])
+      console.log(mutualFollowers)
+    }
+  }
+}
