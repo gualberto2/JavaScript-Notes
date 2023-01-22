@@ -235,4 +235,21 @@ for (let i = 0; i < bobsFollowers.length; i++) { //iterators through bobs follow
 }
 
 //While Loop
-// so basically this one is a little easier
+// so basically this one is a little easier (thanks codecademy UDEMyK YARDY KNOW WTF IS UP)
+// take a look at this code
+// A for loop that prints 1, 2, and 3
+for (let counterOne = 1; counterOne < 4; counterOne++){
+  console.log(counterOne);
+}
+ 
+// A while loop that prints 1, 2, and 3
+let counterTwo = 1;
+while (counterTwo < 4) {
+  console.log(counterTwo);
+  counterTwo++;
+}
+
+// so basically its like easier to write and understand, since the counterTwo variable is a global scope 
+// and the stopping/test condition is in the variable(HERE) in there and will be accounted for during each
+// round of a loop. While it runs true it will keep looping until it runs false.
+// alr monkey term: While true keep running code, once/if false stop running while looop
