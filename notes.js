@@ -176,7 +176,15 @@ console.log(arrayLoop[3])
 */
 //alr so you can see that this is very inefficient
 
+/*
+//here is a structure for a for loop
+// for (let counter = value; couner (< / > / =); counter++/counter--) {
+  function
+}
+*/
+
 //first there's the for loop:
+//this one counts forward given the counter is set to ++
 for (let i = 1; i < 5; i++){
     console.log(i)
   }
@@ -186,9 +194,21 @@ for (let i = 1; i < 5; i++){
 3
 4
 */
-
-/*
-// for (let counter = value; couner (< / > / =); counter++/counter--) {
-  function
+// The loop below loops from 3 to 0.
+for (let i = 3; i >= 0; i--){
+  console.log(i);
 }
+/* */
+
+//Looping through arrays
+// alr so basically you can use the variable name of the array as the stopping condiiton (vacationSpots)
+// using .length() 
+const vacationSpots = ['Bali', 'Paris', 'Tulum'];
+for (let i = 0; i < vacationSpots.length; i++ ){
+  console.log('I would love to visit ' + vacationSpots[i]);
+}
+/*
+prints would love to visit Bali
+I would love to visit Paris
+I would love to visit Tulum
 */
