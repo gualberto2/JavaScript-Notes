@@ -309,3 +309,16 @@ let spaceship = {
 const crewCount = spaceship.numCrew;
 const planetArray = spaceship.flightPath;
 const fuelType = spaceship.'Fuel Type' // this will throw a referenceError since it cannot be used as a string
+// to access the fuel type or any string read the next section
+
+// Bracket Notation
+// Instead of "." notation you can use bracket notation "[]" which can access an objects property
+// using its index, this is useful for objects using a string as the object name
+let spaceship = {
+  'Fuel Type' : 'Turbo Fuel',
+  'Active Mission' : true,
+  homePlanet : 'Earth', 
+  numCrew: 5
+ };
+let isActive = (spaceship['Active Mission']);
+console.log(spaceship['Active Mission'])
