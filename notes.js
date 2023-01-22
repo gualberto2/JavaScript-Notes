@@ -276,10 +276,8 @@ do { // do this
 
 //Break
 // so you can break out of a loop with this, if the condition or loop gets met before its specified condition
-// 
+// this is especially useful in big data structures
 const rapperArray = ["Lil' Kim", "Jay-Z", "Notorious B.I.G.", "Tupac"];
-
-// Write your code below
 for (let i = 0; i < rapperArray.length; i++) {
   console.log(rapperArray[i] + " And if you don't know, now you know.");
       if (rapperArray[i] === 'Notorious B.I.G.'){
