@@ -346,3 +346,84 @@ delete spaceship['Secret Mission']
 // never forget that broe.
 // basically you can make an object, put in some properties AND a method (which is basically a function)
 // to execute a function  
+let retreatMessage = 'We no longer wish to conquer your planet. It is full of dogs, which we do not care for.';
+
+const alienShip = {
+  retreat () {
+    console.log(retreatMessage)
+  },
+   takeOff () {
+    console.log('Spim... Borp... Glix... Blastoff!')
+  }
+}
+
+console.log(alienShip.retreat()) // prints We no longer wish to conquer your planet. It is full of dogs, which we do not care for. undefined
+console.log(alienShip.takeOff()) // prints Spim... Borp... Glix... Blastoff!
+
+
+
+// Nested Objects 
+// just like with nested loops, you can nest objects inside of other objects. 
+let spaceship = {
+  passengers: [{name: 'bebe diana'}],
+  telescope: {
+    yearBuilt: 2018,
+    model: "91031-XLT",
+    focalLength: 2032 
+  },
+  crew: {
+    captain: { 
+      name: 'Sandra', 
+      degree: 'Computer Engineering', 
+      encourageTeam() { console.log('We got this!') },
+     'favorite foods': ['cookies', 'cakes', 'candy', 'spinach'] }
+  },
+  engine: {
+    model: "Nimbus2000"
+  },
+  nanoelectronics: {
+    computer: {
+      terabytes: 100,
+      monitors: "HD"
+    },
+    'back-up': {
+      battery: "Lithium",
+      terabytes: 50
+    }
+  },
+}; 
+
+let capFave = spaceship.crew.captain['favorite foods'][0] // this runs through the spaceship variable, into the crew
+let firstPassenger = spaceship.passengers[0]
+
+console.log(capFave) // prints cookies
+console.log(firstPassenger) // prints {name: "bebe diana"}
+
+
+//Pass By Reference
+// alr broe so basically objects are passed by reference, this in gorilla brain words means
+// when a variable assigned to an object is passed into a function as an argument da compooter 
+// thinks of the parameter name as the space in memory holding that object
+// meaning that it can permanently mutate the object even if its a const variable
+let spaceship = {
+  'Fuel Type' : 'Turbo Fuel',
+  homePlanet : 'Earth'
+};
+
+let greenEnergy = obj => {
+  obj['Fuel Type'] = 'avocado oil'; // mutates from turbo fuel to avocado oil
+}
+
+let remotelyDisable = obj => { 
+  obj.disabled = true; //this is now added to the object
+}
+
+greenEnergy(spaceship)
+remotelyDisable(spaceship)
+
+console.log(spaceship) // prints
+/*
+{ 'Fuel Type': 'avocado oil',
+  homePlanet: 'Earth',
+  disabled: true }
+*/
