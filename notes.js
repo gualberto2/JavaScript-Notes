@@ -427,3 +427,6 @@ console.log(spaceship) // prints
   homePlanet: 'Earth',
   disabled: true }
 */
+
+//Looping through Objects
+// the "for... in" iterator will iterate through each variable object
