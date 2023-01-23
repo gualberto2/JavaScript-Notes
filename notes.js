@@ -314,7 +314,7 @@ const fuelType = spaceship.'Fuel Type' // this will throw a referenceError since
 // Bracket Notation
 // Instead of "." notation you can use bracket notation "[]" which can access an objects property
 // using its index, this is useful for objects using a string as the object name
-let spaceship = {
+let spaceship2 = {
   'Fuel Type' : 'Turbo Fuel',
   'Active Mission' : true,
   homePlanet : 'Earth', 
@@ -322,3 +322,27 @@ let spaceship = {
  };
 let isActive = (spaceship['Active Mission']);
 console.log(spaceship['Active Mission'])
+let fuelKind = (spaceship['Fuel Type'])
+console.log(fuelKind)
+
+// Property Assignment
+// alr bro so basically you can mutate an object
+let spaceship = {
+  'Fuel Type' : 'Turbo Fuel',
+  homePlanet : 'Earth',
+  color: 'silver',
+  'Secret Mission' : 'Discover life outside of Earth.'
+};
+
+spaceship.color = 'glorious gold';
+spaceship.numEngines = 7;
+delete spaceship['Secret Mission']
+
+// you can remove, edit, and add new properties to an object
+
+
+// Methods
+// so a method is what an object does, properties are what an object has.
+// never forget that broe.
+// basically you can make an object, put in some properties AND a method (which is basically a function)
+// to execute a function  
