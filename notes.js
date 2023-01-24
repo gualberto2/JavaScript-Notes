@@ -501,7 +501,7 @@ console.log(robot.provideInfo()) //prints "I am 1E78V2 and my current energy lev
 // so bro alr you basically cant access a this. object inside of a function so you can write it from this
 const robot = {
   energyLevel: 100,
-  checkEnergy: () => {
+  checkEnergy: () => { // difference
     console.log(`Energy is currently at ${energyLevel}%.`)
   }
 }
@@ -511,7 +511,7 @@ robot.checkEnergy();
 // to this which will make the this. work
 const robot = {
   energyLevel: 100,
-  checkEnergy()  {
+  checkEnergy() { // difference
     console.log(`Energy is currently at ${energyLevel}%.`)
   }
 }
