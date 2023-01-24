@@ -549,3 +549,6 @@ const robot = {
 console.log(robot.energyLevel) // prints My current energy level is 100
 
 
+//Setters
+// so basically you can reassign values of existing properties
+// getter + setter methods properties cannot share the same name as the getter/setter function
