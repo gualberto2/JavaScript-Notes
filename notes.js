@@ -531,4 +531,21 @@ bankAccount._amount = 1000000;
 // this can be reassigned
 
 
-// 
+//Getters
+// methods that get and return the internal properties of an object
+// getter + setter methods properties cannot share the same name as the getter/setter function
+const robot = {
+  _model: '1E78V2',
+  _energyLevel: 100,
+  get energyLevel(){
+    if (typeof this._energyLevel === 'number'){
+      return `My current energy level is ${this._energyLevel}`
+    } else {
+      return "System malfunction: cannot retrieve energy level";
+    }
+  }
+};
+
+console.log(robot.energyLevel)
+
+
