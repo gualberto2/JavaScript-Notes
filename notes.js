@@ -3,6 +3,9 @@
 //I try and explain it in the easiest dumbed down way possible without really giving any 
 //context as to why youd need it but lowkey just look and youll find what you need fr
 
+//To call a function
+variable.function();
+
 //Global Scopes
 //So basically you can use a variable outside of a function like this
 const vari1 = "awesome"
@@ -552,3 +555,44 @@ console.log(robot.energyLevel) // prints My current energy level is 100
 //Setters
 // so basically you can reassign values of existing properties
 // getter + setter methods properties cannot share the same name as the getter/setter function
+const robot = {
+  _model: '1E78V2',
+  _energyLevel: 100,
+  _numOfSensors: 15, // original value
+  get numOfSensors(){ // getter
+    if(typeof this._numOfSensors === 'number'){
+      return this._numOfSensors; // returns numOfSensors
+    } else {
+      return 'Sensors are currently down.'
+    }
+  },
+  set numOfSensors(num){ // setter
+    if (typeof num === 'number' && num >= 0){
+      this._numOfSensors = num; // reassignment here from 15 to 100
+    } else {
+      console.log('Pass in a number that is greater than or equal to 0')
+    }
+  }
+};
+robot.numOfSensors = 100; // argument provided for numOfSensors object
+console.log(robot.numOfSensors)
+
+
+
+//Factory Function
+// alr so basically these will create multiple objects at once/quickly
+// these will take in a few parameters that are assigned to objects:
+const robotFactory = (model, mobile) => {
+  return {
+    model : model, // parameter1
+		mobile: mobile, // parameter2
+		beep () { //function
+      console.log('Beep Boop'); 
+    }
+	};
+};
+
+const tinCan = robotFactory('P-500', true);
+tinCan.beep(); // calling function // prints 'Beep Boop'
+console.log(tinCan.mobile) // prints 'true'
+
