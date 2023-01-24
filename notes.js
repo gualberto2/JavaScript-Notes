@@ -502,7 +502,7 @@ console.log(robot.provideInfo()) //prints "I am 1E78V2 and my current energy lev
 const robot = {
   energyLevel: 100,
   checkEnergy: () => { // difference
-    console.log(`Energy is currently at ${energyLevel}%.`)
+    console.log(`Energy is currently at ${this.energyLevel}%.`)
   }
 }
 
@@ -512,8 +512,12 @@ robot.checkEnergy();
 const robot = {
   energyLevel: 100,
   checkEnergy() { // difference
-    console.log(`Energy is currently at ${energyLevel}%.`)
+    console.log(`Energy is currently at ${this.energyLevel}%.`)
   }
 }
 
 robot.checkEnergy();
+
+
+//Privacy
+//  
