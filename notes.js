@@ -484,3 +484,36 @@ Shauna: Conservation Science
 
 //Advanced Methods
 // 'This'
+// So basically like broe alr hold on i need to ok so basically broe some methods are not in direct access 
+// to other properties in the other methods.
+// we gotta use a .this to get access like this
+const robot = {
+  model: '1E78V2',
+  energyLevel: 100,
+  provideInfo() {
+    return `I am ${this.model} and my current energy level is ${this.energyLevel}.` // so if we used ${robot.model} and ${robot.energyLevel} it would not work essentially
+  }
+};
+
+console.log(robot.provideInfo()) //prints "I am 1E78V2 and my current energy level is 100."
+
+//Arrow Functions and This
+// so bro alr you basically cant access a this. object inside of a function so you can write it from this
+const robot = {
+  energyLevel: 100,
+  checkEnergy: () => {
+    console.log(`Energy is currently at ${energyLevel}%.`)
+  }
+}
+
+robot.checkEnergy();
+
+// to this which will make the this. work
+const robot = {
+  energyLevel: 100,
+  checkEnergy()  {
+    console.log(`Energy is currently at ${energyLevel}%.`)
+  }
+}
+
+robot.checkEnergy();
