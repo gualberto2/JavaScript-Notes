@@ -520,4 +520,15 @@ robot.checkEnergy();
 
 
 //Privacy
-//  
+// sometimes we dont want some code getting access to other code
+// some langauges have privacy built in javascript makes you write it out
+// we use an _underscore before the name of the property 
+// also these private objects cannot be directly manipulated
+const bankAccount = {
+  _amount: 1000
+}
+bankAccount._amount = 1000000;
+// this can be reassigned
+
+
+// 
