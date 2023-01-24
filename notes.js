@@ -596,3 +596,56 @@ const tinCan = robotFactory('P-500', true);
 tinCan.beep(); // calling function // prints 'Beep Boop'
 console.log(tinCan.mobile) // prints 'true'
 
+// Shorthand Version
+// so we can make it a lil shawty by like idk writing the variable into a function
+function robotFactory(model, mobile){
+  return {
+    model, // parameter1
+    mobile, // parameter2
+    beep() {
+      console.log('Beep Boop');
+    }
+  }
+}
+
+const newRobot = robotFactory('P-501', false)
+console.log(newRobot.model) // prints 'P-501'
+console.log(newRobot.mobile) // prints 'false'
+
+
+// Destructured Assignment
+// so you can extract a certain a certain property from an object by making a variable
+// and setting the property name equal to the object name :
+const robot = {
+  model: '1E78V2',
+  energyLevel: 100,
+  functionality: { // we want to go into this neseted object-property thing 
+    beep() { // and extract this property 
+      console.log('Beep Boop');
+    },
+    fireLaser() {
+      console.log('Pew Pew');
+    },
+  }
+};
+
+const { functionality } =  robot;
+console.log(functionality.beep())
+
+
+// Built-in Object Methods
+// so basically broe theres like some things in here that have specific uses that are useful
+// u can find some here https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object#Methods_of_the_Object_constructor
+const robot = {
+	model: 'SAL-1000',
+  mobile: true,
+  sentient: false,
+  armor: 'Steel-plated',
+  energyLevel: 75
+};
+
+const robotKeys = Object.keys(robot);
+console.log(robotKeys);
+
+const newRobot = Object.assign({laserBlaster: true, voiceRecognition: true}, robot);
+console.log(newRobot);
