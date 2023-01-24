@@ -637,7 +637,8 @@ console.log(functionality.beep())
 // so basically broe theres like some things in here that have specific uses that are useful
 // u can find some here https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object#Methods_of_the_Object_constructor
 const robot = {
-	model: 'SAL-1000',
+	model: 'SAL-1000',//
+
   mobile: true,
   sentient: false,
   armor: 'Steel-plated',
