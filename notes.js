@@ -652,3 +652,7 @@ console.log(robotEntries) //[ [ 'model', 'SAL-1000' ],[ 'mobile', true ],[ 'sent
 
 const newRobot = Object.assign({laserBlaster: true, voiceRecognition: true}, robot); // basically adds a new property and value
 console.log(newRobot); // prints { laserBlaster: true,voiceRecognition: true,model: 'SAL-1000',mobile: true,sentient: false,armor: 'Steel-plated',energyLevel: 75 }
+
+
+
+// Iterators
