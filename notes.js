@@ -637,16 +637,18 @@ console.log(functionality.beep())
 // so basically broe theres like some things in here that have specific uses that are useful
 // u can find some here https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object#Methods_of_the_Object_constructor
 const robot = {
-	model: 'SAL-1000',//
-
+	model: 'SAL-1000', 
   mobile: true,
   sentient: false,
   armor: 'Steel-plated',
   energyLevel: 75
 };
 
-const robotKeys = Object.keys(robot);
-console.log(robotKeys);
+const robotKeys = Object.keys(robot); // the .keys method returns an array of an objects string-keyed properties (the name of the properties)
+console.log(robotKeys); // prints [ 'model', 'mobile', 'sentient', 'armor', 'energyLevel' ]
 
-const newRobot = Object.assign({laserBlaster: true, voiceRecognition: true}, robot);
-console.log(newRobot);
+const robotEntries = Object.entries(robot) // the .entries basiclly just prints everything inside of the object including property and value 
+console.log(robotEntries) //[ [ 'model', 'SAL-1000' ],[ 'mobile', true ],[ 'sentient', false ],[ 'armor', 'Steel-plated' ],[ 'energyLevel', 75 ] ]{ laserBlaster: true,
+
+const newRobot = Object.assign({laserBlaster: true, voiceRecognition: true}, robot); // basically adds a new property and value
+console.log(newRobot); // prints { laserBlaster: true,voiceRecognition: true,model: 'SAL-1000',mobile: true,sentient: false,armor: 'Steel-plated',energyLevel: 75 }
