@@ -656,3 +656,12 @@ console.log(newRobot); // prints { laserBlaster: true,voiceRecognition: true,mod
 
 
 // Iterators
+// Higher Order Functions
+// function as data: so basically if you have very long functions you can use another variable as something
+// to store the function
+const announceThatIAmDoingImportantWork = () => {
+  console.log("I'm doing very important work!");
+};
+const busy = announceThatIAmDoingImportantWork; 
+busy(); // This function call barely takes any space!
+
