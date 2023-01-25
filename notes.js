@@ -665,3 +665,12 @@ const announceThatIAmDoingImportantWork = () => {
 const busy = announceThatIAmDoingImportantWork; 
 busy(); // This function call barely takes any space!
 
+
+// Functions as Methods
+// alr broe lets take a look at this code rq
+function sayThanks(name) { // the sayThanks(name) the word parameter is within those paranthesis
+  console.log('Thank you for your purchase ' + name + '! We appreciate your business.'); // here we include (name) into the string without a value yet
+}
+
+sayThanks('Cole'); // when we call the function we add a name ourselves/ value... 
+// prints Thank you for your purchase Cole! We appreciate your business.
