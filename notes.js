@@ -674,3 +674,31 @@ function sayThanks(name) { // the sayThanks(name) the word parameter is within t
 
 sayThanks('Cole'); // when we call the function we add a name ourselves/ value... 
 // prints Thank you for your purchase Cole! We appreciate your business.
+
+//lets take a look at the following code blocks
+// code block 1
+const addTwo = num => {
+  return num + 2;
+}
+
+const checkConsistentOutput = (func, val) => {
+  let checkA =  val + 2;
+  let checkB = func(val);
+  return checkA === checkB? func(val): 'inconsistent results';
+}
+
+console.log(checkConsistentOutput(addTwo, 2)); // prints 4
+
+//----=========------
+
+// code block 2
+const higherOrderFunc = param => {
+  param();
+  return `I just invoked ${param.name} as a callback function!`
+}
+ 
+const anotherFunc = () => {
+  return 'I\'m being invoked by the higher-order function!';
+}
+ 
+higherOrderFunc(anotherFunc);
