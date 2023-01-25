@@ -677,7 +677,7 @@ sayThanks('Cole'); // when we call the function we add a name ourselves/ value..
 
 //lets take a look at the following code blocks
 // code block 1
-const addTwo = num => {
+const addTwo = num => { // higher-order function that adds the number given by 2
   return num + 2;
 }
 
@@ -687,18 +687,33 @@ const checkConsistentOutput = (func, val) => {
   return checkA === checkB? func(val): 'inconsistent results';
 }
 
-console.log(checkConsistentOutput(addTwo, 2)); // prints 4
+const randomNumber = num => {
+  return Math.floor(Math.random() * 10) // selects a random number between 0 and 10
+}
 
+
+console.log(checkConsistentOutput(addTwo, 2)); // prints 4
+console.log(checkConsistentOutput(randomNumber, 4)); // prints inconsistent results
 //----=========------
 
 // code block 2
-const higherOrderFunc = param => {
-  param();
-  return `I just invoked ${param.name} as a callback function!`
+const higherOrderFunc = param => { // Higher-order function that accepts a single parameter
+  param(); // param gets invoked with the parenthesis()
+  return `I just invoked ${param.name} as a callback function!` //the .name method prints the name of the value given (in this case it will print the name of the parameter given)
 }
  
-const anotherFunc = () => {
-  return 'I\'m being invoked by the higher-order function!';
+const anotherFunc = () => { // this function aspires to be called by the higher function
+  return 'I\'m being invoked by the higher-order function!'; 
 }
  
-higherOrderFunc(anotherFunc);
+higherOrderFunc(anotherFunc); // here we invoke the lower function through the higher-order function
+console.log(higherOrderFunc(anotherFunc)) // I just invoked anotherFunc as a callback function!
+
+// ----=======------
+
+// Code Block 3
+higherOrderFunc(() => { // here we have a higher-order function that has an anonymous function, simply a function without name
+  for (let i = 0; i <= 10; i++){
+    console.log(i); // prints 0 1 2 3 4 5 6 7 8 9 10
+  }
+});
