@@ -6,7 +6,7 @@
 //To call a function
 variable.function();
 
-//Global Scopes
+//Global Scopes //
 //So basically you can use a variable outside of a function like this
 const vari1 = "awesome"
 const vari2 = () => {
@@ -14,7 +14,7 @@ const vari2 = () => {
 }
 vari2() // prints "awesome sauce"
 
-//Block Scopes
+//Block Scopes //
 //(When a variable is defined inside a block, it is only accessible to the code within the curly braces {})
 // However bro u cant use a variable thats inside a function outside of said function:
 const vari3 = 5;
@@ -25,7 +25,7 @@ const vari4 = () => {
 vari4()
 vari5()
 
-//Scope Pollution
+//Scope Pollution //
 // alr broe so ill just explain it dont try and use too many variables in the global namespace or whatever thats already too much work
 // so alr broe what you have to do is reassign those variables in the global spaces inside the function or whatever
 // your using broe and then youll be good. also remember any reassignment down the line will result in that variable
@@ -81,13 +81,13 @@ const logSkyColor = () => {
 
 
 
-//Arrays
+//Arrays //
 // alr broe so we already know what arrays are
 // https://www.codecademy.com/resources/docs/javascript/arrays/concat some .methods and their uses
 let array = [1, 5, "balls", 3];
 console.log(array);
 
-//Nested Arrays
+//Nested Arrays //
 //alr bro so you can put arrays in arrays
 const numberClusters = [[1, 2], [3, 4], [5, 6]];
 const target = numberClusters[2][1];
@@ -108,7 +108,7 @@ const array1 = [1, 5, "balls", 3];
 array1[2] = "thats a bad word :("
 console.log(array1) //prints {1, 5, "balls", 3}
 
-//PROPERTIES
+//PROPERTIES //
 //.length() gives you the length of an array:
 const objectives = ['Learn a new language', 'Read 52 books', 'Run a marathon'];
 console.log(objectives.length)
@@ -165,7 +165,7 @@ console.log(concept) // prints [ 'arrays', 'can', 'be']
 
 
 
-//Loops
+//Loops //
 // alr so basically loops allow you to iterate through arrays without doing it like a dumbass:
 const arrayLoop =  [1, 2, 3, 4]
 console.log(arrayLoop[0])
@@ -205,7 +205,7 @@ for (let i = 3; i >= 0; i--){
 }
 /* */
 
-//Looping through arrays
+//Looping through arrays  //
 // alr so basically you can use the variable name of the array as the stopping condiiton (vacationSpots)
 // in this example, using .length() checks to see if the iterator is less than the length of the variables
 // total array length (length is 2 (indexed at zero)) and if it is then the iterator adds one.
@@ -219,7 +219,7 @@ I would love to visit Paris
 I would love to visit Tulum
 */
 
-// Nested For Loops
+// Nested For Loops //
 // alr broe so this one might be a little tricky if ur dumb like me
 // so we can loop a loop inside of a loop to save what that loop did in an array or whatever
 // it looks something like this
@@ -237,7 +237,7 @@ for (let i = 0; i < bobsFollowers.length; i++) { //iterators through bobs follow
   }
 }
 
-//While Loop
+//While Loop //
 // so basically this one is a little easier (thanks codecademy UDEMyK YARDY KNOW WTF IS UP)
 // take a look at this code
 // A for loop that prints 1, 2, and 3
@@ -258,7 +258,7 @@ while (counterTwo < 4) {
 // alr monkey term: While true keep running code, once/if false stop running while looop
 
 
-//Do... While loop statements
+//Do... While loop statements //
 // so basically this will do something until a specified condition is no longer met
 // example
 let cupsOfSugarNeeded = 3;
@@ -277,7 +277,7 @@ do { // do this
 */
 
 
-//Break
+//Break //
 // so you can break out of a loop with this, if the condition or loop gets met before its specified condition
 // this is especially useful in big data structures
 const rapperArray = ["Lil' Kim", "Jay-Z", "Notorious B.I.G.", "Tupac"];
@@ -291,7 +291,7 @@ for (let i = 0; i < rapperArray.length; i++) { // will itereate whole array unti
 
 
 // Alr bro so we starting the next set of notes
-// Objects
+// Objects //
 // so basically we can use objects to assign them to variables like this:
 let fasterShip = {
   'Fuel Type': 'Turbo Fuel',
@@ -314,7 +314,7 @@ const planetArray = spaceship.flightPath;
 const fuelType = spaceship.'Fuel Type' // this will throw a referenceError since it cannot be used as a string
 // to access the fuel type or any string read the next section
 
-// Bracket Notation
+// Bracket Notation //
 // Instead of "." notation you can use bracket notation "[]" which can access an objects property
 // using its index, this is useful for objects using a string as the object name
 let spaceship2 = {
@@ -328,7 +328,7 @@ console.log(spaceship['Active Mission'])
 let fuelKind = (spaceship['Fuel Type'])
 console.log(fuelKind)
 
-// Property Assignment
+// Property Assignment //
 // alr bro so basically you can mutate an object
 let spaceship = {
   'Fuel Type' : 'Turbo Fuel',
@@ -344,7 +344,7 @@ delete spaceship['Secret Mission']
 // you can remove, edit, and add new properties to an object
 
 
-// Methods
+// Methods //
 // so a method is what an object does, properties are what an object has.
 // never forget that broe.
 // basically you can make an object, put in some properties AND a method (which is basically a function)
@@ -365,7 +365,7 @@ console.log(alienShip.takeOff()) // prints Spim... Borp... Glix... Blastoff!
 
 
 
-// Nested Objects 
+// Nested Objects //
 // just like with nested loops, you can nest objects inside of other objects. 
 let spaceship = {
   passengers: [{name: 'bebe diana'}],
@@ -403,7 +403,7 @@ console.log(capFave) // prints cookies
 console.log(firstPassenger) // prints {name: "bebe diana"}
 
 
-//Pass By Reference
+//Pass By Reference //
 // alr broe so basically objects are passed by reference, this in gorilla brain words means
 // when a variable assigned to an object is passed into a function as an argument da compooter 
 // thinks of the parameter name as the space in memory holding that object
@@ -485,7 +485,7 @@ Shauna: Conservation Science
 */
 
 
-//Advanced Methods
+//Advanced Methods //
 // 'This'
 // So basically like broe alr hold on i need to ok so basically broe some methods are not in direct access 
 // to other properties in the other methods.
@@ -500,7 +500,7 @@ const robot = {
 
 console.log(robot.provideInfo()) //prints "I am 1E78V2 and my current energy level is 100."
 
-//Arrow Functions and This
+//Arrow Functions and This //
 // so bro alr you basically cant access a this. object inside of a function so you can write it from this
 const robot = {
   energyLevel: 100,
@@ -522,7 +522,7 @@ const robot = {
 robot.checkEnergy();
 
 
-//Privacy
+//Privacy //
 // sometimes we dont want some code getting access to other code
 // some langauges have privacy built in javascript makes you write it out
 // we use an _underscore before the name of the property 
@@ -534,7 +534,7 @@ bankAccount._amount = 1000000;
 // this can be reassigned
 
 
-//Getters
+//Getters //
 // methods that get and return the internal properties of an object
 // getter + setter methods properties cannot share the same name as the getter/setter function
 const robot = {
@@ -552,7 +552,7 @@ const robot = {
 console.log(robot.energyLevel) // prints My current energy level is 100
 
 
-//Setters
+//Setters //
 // so basically you can reassign values of existing properties
 // getter + setter methods properties cannot share the same name as the getter/setter function
 const robot = {
@@ -579,7 +579,7 @@ console.log(robot.numOfSensors)
 
 
 
-//Factory Function
+//Factory Function //
 // alr so basically these will create multiple objects at once/quickly
 // these will take in a few parameters that are assigned to objects:
 const robotFactory = (model, mobile) => {
@@ -613,7 +613,7 @@ console.log(newRobot.model) // prints 'P-501'
 console.log(newRobot.mobile) // prints 'false'
 
 
-// Destructured Assignment
+// Destructured Assignment //
 // so you can extract a certain a certain property from an object by making a variable
 // and setting the property name equal to the object name :
 const robot = {
@@ -633,7 +633,7 @@ const { functionality } =  robot;
 console.log(functionality.beep())
 
 
-// Built-in Object Methods
+// Built-in Object Methods // 
 // so basically broe theres like some things in here that have specific uses that are useful
 // u can find some here https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object#Methods_of_the_Object_constructor
 const robot = {
@@ -655,9 +655,10 @@ console.log(newRobot); // prints { laserBlaster: true,voiceRecognition: true,mod
 
 
 
-// Iterators
-// Higher Order Functions
-// function as data: so basically if you have very long functions you can use another variable as something
+// Iterators //
+// Higher Order Functions //
+
+// function as data //: so basically if you have very long functions you can use another variable as something
 // to store the function
 const announceThatIAmDoingImportantWork = () => {
   console.log("I'm doing very important work!");
@@ -666,7 +667,7 @@ const busy = announceThatIAmDoingImportantWork;
 busy(); // This function call barely takes any space!
 
 
-// Functions as Methods
+// Functions as Methods // 
 // alr broe lets take a look at this code rq
 function sayThanks(name) { // the sayThanks(name) the word parameter is within those paranthesis
   console.log('Thank you for your purchase ' + name + '! We appreciate your business.'); // here we include (name) into the string without a value yet
@@ -675,16 +676,18 @@ function sayThanks(name) { // the sayThanks(name) the word parameter is within t
 sayThanks('Cole'); // when we call the function we add a name ourselves/ value... 
 // prints Thank you for your purchase Cole! We appreciate your business.
 
+
 //lets take a look at the following code blocks
+
 // code block 1
 const addTwo = num => { // higher-order function that adds the number given by 2
   return num + 2;
 }
 
 const checkConsistentOutput = (func, val) => {
-  let checkA =  val + 2;
-  let checkB = func(val);
-  return checkA === checkB? func(val): 'inconsistent results';
+  let checkA =  val + 2; // adds parameter by 2
+  let checkB = func(val); // calls a function and inputs the value given 
+  return checkA === checkB? func(val): 'inconsistent results'; // if both numbers from the checkA and checkB variables are equal than itll print the value given, if not then prins inconsistent results
 }
 
 const randomNumber = num => {
@@ -717,3 +720,9 @@ higherOrderFunc(() => { // here we have a higher-order function that has an anon
     console.log(i); // prints 0 1 2 3 4 5 6 7 8 9 10
   }
 });
+
+// alr so basically you got these higher-order functions that are used to 
+// tbh idk im like reading this stuff and i cant find an answer or use for this stuff
+// so like look at it but im sure youll find a use for this.
+
+// alr bro lets start looking into iterators
