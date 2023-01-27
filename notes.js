@@ -725,4 +725,25 @@ higherOrderFunc(() => { // here we have a higher-order function that has an anon
 // tbh idk im like reading this stuff and i cant find an answer or use for this stuff
 // so like look at it but im sure youll find a use for this.
 
-// alr bro lets start looking into iterators
+// alr bro lets start looking into the actual iterators
+// .forEach() 
+// prints each element in the array
+const fruits = ['mango', 'papaya', 'pineapple', 'apple'];
+fruits.forEach(fruits =>
+console.log(`I want to eat a ${fruits}.`))
+
+// .map()
+// creates a new array with the results of calling a new function for every element in the array
+const animals = ['Hen', 'elephant', 'llama', 'leopard', 'ostrich', 'Whale', 'octopus', 'rabbit', 'lion', 'dog'];
+const secretMessage = animals.map(animals => {
+  return animals.charAt(0);
+})
+console.log(secretMessage.join('')); // .join() returns a string with whatever is given as its parameter
+const bigNumbers = [100, 200, 300, 400, 500];
+const smallNumbers = bigNumbers.map(num => num/100)
+console.log(smallNumbers)
+
+// .filter()
+
+// .findIndex()
+// .reduce()
