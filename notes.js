@@ -740,10 +740,49 @@ const secretMessage = animals.map(animals => {
 })
 console.log(secretMessage.join('')); // .join() returns a string with whatever is given as its parameter
 const bigNumbers = [100, 200, 300, 400, 500];
-const smallNumbers = bigNumbers.map(num => num/100)
-console.log(smallNumbers)
+const smallNumbers = bigNumbers.map(num => num/100) // divides all numbers in bigNumbers array by 100
+console.log(smallNumbers) // prints 1, 2, 3, 4, 5
 
 // .filter()
-
+// returns a new array after filtering out certain elements
+const randomNumbers = [375, 200, 3.14, 7, 13, 852];
+const smallNumbers = randomNumbers.filter(num => {
+  return num < 250;
+})
+const favoriteWords = ['nostalgia', 'hyperbole', 'fervent', 'esoteric', 'serene'];
+const longFavoriteWords = favoriteWords.filter(favoriteWords => {
+  return favoriteWords.length > 7; // returns words that are under 7 characters   
+})
 // .findIndex()
+// will returnm the first index of an element that evaluates to true in ther call back function
+// basically bro used this to find
+const animals = ['hippo', 'tiger', 'lion', 'seal', 'cheetah', 'monkey', 'salamander', 'elephant'];
+const foundAnimal = animals.findIndex(animal => { 
+  return animal === 'elephant'; // finding the index of an elephant
+});
+const startsWithS = animals.findIndex(animal => {
+  return animal[0] === 's' ? true : false;
+});
+
 // .reduce()
+// so basically you can reduce an array and its elements by using a function to combine strings, integers, and whatnot
+const newNumbers = [1, 2, 3, 4]; // these numbers will be ran through
+const newSum = newNumbers.reduce((accumulator, currentValue) => {
+  console.log('The value of accumulator: ', accumulator); // will print the current value we are assigning to accumulate
+  console.log('The value of currentValue: ', currentValue); // will print the value being accumulated (through the array)
+  return accumulator + currentValue; // will add the accumulator and current value
+}, 5); // this is the value we start with to use to accumulate
+// in this case we are starting with 5 ^ above this line youll see, then it will start from the beginning of the array
+
+console.log(newSum) // will print:
+/*
+The value of accumulator:  5
+The value of currentValue:  1
+The value of accumulator:  6
+The value of currentValue:  2
+The value of accumulator:  8
+The value of currentValue:  3
+The value of accumulator:  11
+The value of currentValue:  5
+16
+*/
