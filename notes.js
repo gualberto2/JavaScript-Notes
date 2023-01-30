@@ -786,3 +786,5 @@ The value of accumulator:  11
 The value of currentValue:  5
 16
 */
+
+// alr thats it for notes see i mean peaceoutbro
